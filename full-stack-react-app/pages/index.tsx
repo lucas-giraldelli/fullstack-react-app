@@ -1,9 +1,12 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+
 import { Flex } from '@chakra-ui/react';
 import { TopBar } from '../components/organisms/TopBar';
+import { LandingBody } from '../components/organisms/LandingBody';
+import { LandingFooter } from '../components/organisms/LandingFooter';
 import { Hero } from '../components/molecules/Hero';
-import { MenuItem } from '../components/molecules/MenuItem';
+
 import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
@@ -18,6 +21,8 @@ const Home: NextPage = () => {
       <Flex>
         <Hero />
       </Flex>
+      <LandingBody />
+      <LandingFooter />
     </div>
   );
 };
